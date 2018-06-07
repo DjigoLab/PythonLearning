@@ -18,4 +18,3 @@ while True:
 
     functions.save_into_file(student_name)
 
-print (tonio.get_school_name())

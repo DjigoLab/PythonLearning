@@ -9,5 +9,5 @@ class Student:
         print("Student {0} added".format(name))
     def __str__(self):
         return "Student: " + self.name +", ID:" + str(self.student_id)
-    def get_school_name():
+    def get_school_name(self):
         return self.school_name
