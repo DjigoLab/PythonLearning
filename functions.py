@@ -15,7 +15,11 @@ def print_students_titleclase():
     students_titlecase = get_students_titlecase()
     print(students_titlecase)   
 
-student_name = input("Enter student name: ")
-student_id = input("Enter student id: ")
-add_student(student_name, student_id)
-print_students_titleclase()
+answer = None
+while True:
+    student_name = input("Enter student name, or say No to exit")
+    if student_name.lower() == "no":
+        break
+    student_id = input("Enter student id: ")
+    add_student(student_name, student_id)
+    print_students_titleclase()
