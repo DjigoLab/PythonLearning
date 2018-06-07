@@ -1,6 +1,5 @@
-students = []
 
-def add_student(name, student_id = 0):
+def add_student(name, student_id = 0,type = "new"):
     student = {"name" : name, "student_id" : student_id}
     students.append(student)
     print("Student {0} added".format(name))
@@ -34,11 +33,4 @@ def read_file():
 
 read_file()
 
-while True:
-    student_name = input("Enter student name, or say No to exit :")
-    if student_name.lower() == "no":
-        print("Bye!")
-        break
-    student_id = input("Enter student id: ")
-    add_student(student_name, student_id)
-    save_into_file(student_name)
+
