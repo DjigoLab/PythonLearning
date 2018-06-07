@@ -33,6 +33,7 @@ def read_file():
         print ("Can not read the file")
 
 read_file()
+
 while True:
     student_name = input("Enter student name, or say No to exit :")
     if student_name.lower() == "no":
